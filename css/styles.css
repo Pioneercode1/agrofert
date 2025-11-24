@@ -859,3 +859,9 @@ footer {
     color: var(--color-lime-end);
     font-weight: 700;
 }
+
+.language {
+    color: var(--color-gold);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
