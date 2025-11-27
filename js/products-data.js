@@ -67,7 +67,69 @@ const products = [
             { element: "Cytokinins", value: "300 ppm", element_ar: "السيتوكينات", value_ar: "300 جزء في المليون" }
         ],
         application: { foliar: "1-2 L/ha", fertigation: "3-5 L/ha" }
+    },
+    {
+        id: 4,
+        title: "Agromen",
+        title_ar: "أجرومين",
+        image: "assets/agro_men.jpg",
+        badges: ["chemical", "Eco-Friendly"],
+        badges_ar: ["عضوي", "سائل", "صديق للبيئة"],
+        crops: ["Cereals", "Fruits", "Ornamentals"],
+        crops_ar: ["حبوب", "فواكه", "خضروات","نباتات الزينة"],
+        shortDesc: "Balanced elements for plant nutrition and stress resistance.",
+        shortDesc_ar: "عناصر متوازنة لتغذية النبات ومقاومة الإجهاد.",
+        fullDesc: "Various nutrients are needed by plants, increasing vegetative growth and fruit set.",
+        fullDesc_ar: "عناصر غذائية متنوعة يحتاجها النبات، يعزز من نمو النبات وزيادة النمو الخضري وعقد الثمار.",
+        composition: [
+            { element: "Amino acids", value: "25%", element_ar: "أحماض أمينية", value_ar: "25%" },
+            { element: "Nitrogen", value: "10%", element_ar: "نيتروجين", value_ar: "10%" },
+            { element: "iron", value: "1%", element_ar: "حديد", value_ar: "1%" },
+            // 
+            { element: "Manganese", value: "0.5%", element_ar: "منجنيز", value_ar: "0.5%" },
+            { element: "zinc", value: "0.5%", element_ar: "زنك", value_ar: "0.5%" },
+            { element: "Polysaccharide", value: "10%", element_ar: "بولي سكاريد", value_ar: "10%" }
+        ],
+        application: { foliar: "1-2 L/ha", fertigation: "3-5 L/ha" }
+    },
+    {
+        id: 5,
+        title: "Moly X",
+        title_ar: "مولي إكس",
+        image: "assets/moly_x.jpg",
+        badges: ["chemical", "Eco-Friendly"],
+        badges_ar: ["كميائي", "سائل", "صديق للبيئة"],
+        crops: ["Cereals", "Fruits", "Ornamentals"],
+        crops_ar: ["حبوب", "فواكه", "خضروات","نباتات الزينة"],
+        shortDesc: "Rare elements for plant nutrition and fruit firmness.",
+        shortDesc_ar: "عناصر نادرة لتغذية النبات وصلابة الثمار.",
+        fullDesc: "Important nutrients needed by the plant, promoting the firmness of leaves and fruits.",
+        fullDesc_ar: "عناصر غذائية هامة يحتاجها النبات، يعزز من  صلابة الأوراق والثمار.",
+        composition: [
+            { element: "Boron", value: "14%", element_ar: "بورون", value_ar: "14%" },
+            { element: "Molybdenum", value: "0.1%", element_ar: "مولبيدنوم", value_ar: "0.1%" }
+        ],
+        application: { foliar: "1-2 L/ha", fertigation: "3-5 L/ha" }
+    },
+    {
+        id: 6,
+        title: "Humic Acid",
+        title_ar: "هيومك أسيد",
+        image: "assets/humic_acid.jpg",
+        badges: ["chemical", "Eco-Friendly"],
+        badges_ar: ["عالي التركيز", "ناعم"],
+        crops: ["Cereals", "Fruits", "Ornamentals"],
+        crops_ar: ["حبوب", "فواكه", "خضروات","نباتات الزينة"],
+        shortDesc: "Humic acid is a natural organic fertilizer that improves soil fertility and plant health.",
+        shortDesc_ar: "سماد عضوي طبيعي يحسن خصوبة التربة وصحة النباتات.",
+        fullDesc: "A natural organic fertilizer that improves soil fertility and plant health. It increases the soil's ability to retain water and nutrients, promotes beneficial microbial activity, helps improve soil structure and reduce salinity, and stimulates root growth and seed germination. It can be added to the soil or used in solutions to increase nutrient absorption efficiency.",
+        fullDesc_ar: "سماد عضوي طبيعي يحسن خصوبة التربة وصحة النباتات. يعمل على زيادة قدرة التربة على الاحتفاظ بالماء والمغذيات، يعزز النشاط الميكروبي المفيد، يساعد في تحسين بنية التربة وتخفيف ملوحتها، ويحفز نمو الجذور وإنبات البذور. يمكن إضافته للتربة أو استخدامه في محاليل لزيادة كفاءة امتصاص العناصر الغذائية.",
+        composition: [
+            { element: "Humic Acid", value: "100%", element_ar: "هيومك أسيد", value_ar: "100%" }
+        ],
+        application: { foliar: "3-5 L/ha", fertigation: "1-2 L/ha" }
     }
+
 ];
 
 // --- 2. COMMON FUNCTIONS (Language Agnostic) ---
