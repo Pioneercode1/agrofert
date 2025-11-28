@@ -69,4 +69,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    // --- EmailJS Form Submission Logic ---
+    const contactForm = document.getElementById('contact-form');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Email JS
+            const serviceID = 'service_d9xavqz';
+            const templateID = 'template_yeuwmdf';
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert('Your request has been successfully sent to Agrofert! Thank you.');
+                    contactForm.reset();
+                }, (error) => {
+                    console.error('EmailJS failed to send:', error);
+                    alert('FAILED to send message. Please check the console for details or try again later.');
+                });
+        });
+    }
+
 });

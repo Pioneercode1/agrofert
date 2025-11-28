@@ -21,6 +21,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // يتم تهيئة الإيميل جيه إس هنا باستخدام المفتاح العام للمستخدم YOUR_EMAILJS_PUBLIC_KEY
+            emailjs.init({
+                publicKey: "0OIx1thTUEiYpPNDu", // استبدل بهذا مفتاحك العام
+            });
+        })();
+    </script>
 
 </head>
 
@@ -195,30 +205,32 @@
 
                     <div class="map-container">
                         <!-- Simulated Map (Grayscale) -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.16299167394783!2d32.30489381863962!3d30.850164608085187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f9ab0070c15565%3A0x935338eb49ea89fe!2z2YXZiNmEINin2YTYt9mK2Kg!5e0!3m2!1sar!2seg!4v1764234203866!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.16299167394783!2d32.30489381863962!3d30.850164608085187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f9ab0070c15565%3A0x935338eb49ea89fe!2z2YXZiNmEINin2YTYt9mK2Kg!5e0!3m2!1sar!2seg!4v1764234203866!5m2!1sar!2seg"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                 </div>
 
                 <div class="contact-form-wrapper">
                     <h3 class="mb-md">طلب عرض أسعار</h3>
-                    <form class="contact-form">
-                        <input type="text" placeholder="الأسم بالكامل" required>
-                        <input type="text" placeholder="اسم المحل أو الشركة">
-                        <select>
-                            <option value="">تحديد الدور</option>
+                    <form class="contact-form" id="contact-form">
+                        <input type="text" placeholder="الأسم بالكامل" name="user_name" required>
+                        <input type="text" placeholder="اسم المحل أو الشركة" name="company_name">
+                        <select name="user_role">
+                            <option value="">تحديد المطلوب</option>
                             <option value="farmer">مزارع</option>
-                            <option value="distributor">موزع</option>
-                            <option value="investor">مستثمر</option>
+                            <option value="distributor">موزرع</option>
+                            <option value="investor">مدير مزرعة</option>
                         </select>
-                        <select>
+                        <select name="product_interest">
                             <option value="">الاهتمام بالمنتجات</option>
                             <option value="liquid">الأسمدة السائلة</option>
                             <option value="granular">الأسمدة المحببة</option>
-                            <option value="bulk">الأسمدة الناعمة</option>
                             <option value="bulk">طلب بالجملة</option>
                         </select>
-                        <textarea rows="5" placeholder="أكتب رسالتك" required></textarea>
+                        <textarea rows="5" placeholder="أكتب رسالتك" name="message" required></textarea>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">إرسال الرسالة</button>
                     </form>
                 </div>
