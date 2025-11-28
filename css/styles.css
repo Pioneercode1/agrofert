@@ -699,24 +699,6 @@ footer {
         width: 100%;
     }
 
-    .contact-form input,
-    .contact-form select,
-    .contact-form textarea {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: var(--spacing-sm);
-        border: 1px solid #ddd;
-        border-radius: 2px;
-        font-family: var(--font-body);
-    }
-
-    .contact-form input:focus,
-    .contact-form select:focus,
-    .contact-form textarea:focus {
-        outline: none;
-        border-color: var(--color-emerald);
-    }
-
     @media (max-width: 768px) {
         .contact-container {
             grid-template-columns: 1fr;
@@ -847,24 +829,7 @@ footer {
     .map-container iframe {
         width: 100%;
     }
-
-    .contact-form input,
-    .contact-form select,
-    .contact-form textarea {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: var(--spacing-sm);
-        border: 1px solid #ddd;
-        border-radius: 2px;
-        font-family: var(--font-body);
-    }
-
-    .contact-form input:focus,
-    .contact-form select:focus,
-    .contact-form textarea:focus {
-        outline: none;
-        border-color: var(--color-emerald);
-    }
+    
 }
 
  /* Page products Styles */
